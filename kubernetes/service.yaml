@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kakaomsg
+  labels:
+    app: kakaomsg
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: kakaomsg
